@@ -19,7 +19,7 @@ app.use(express.json());
 app.use("/api/auth",userRoutes)
 app.use("/api/tickets",ticketRoutes)
 app.use("/api/inngest",serve({
-    client:"inngest",
+    client:inngest,
     functions:[onUserSignUp,onTicketCreated]
 }));
 
