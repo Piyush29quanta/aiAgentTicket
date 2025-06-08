@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const ticketSchema = new mongoose.model({
+const ticketSchema = new mongoose.Schema({
    title:String,
    description:String,
    status:{type:String,default:"TODO"},
